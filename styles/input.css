@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  * {
+    @apply transition-all duration-300;
+  }
+
+  img {
+    @apply pointer-events-none;
+  }
+
+  .accordion {
+    @apply border-b border-l-neutral-l-gb overflow-hidden;
+  }
+
+  .accordion button {
+    @apply py-4 flex items-center justify-between gap-4 w-full font-medium text-neutral-vd-gb;
+  }
+
+  .accordion p {
+    @apply text-neutral-d-gb max-h-0;
+  }
+
+  .accordion.active p {
+    @apply max-h-fit -mt-2 pb-2;
+  }
+}

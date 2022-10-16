@@ -1,40 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | FAQ Accordion Card</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  How many team members can I invite?
-  You can invite up to 2 additional users on the Free plan. There is no limit on 
-  team members for the Premium plan.
+    <title>Frontend Mentor | FAQ Accordion Card</title>
 
-  What is the maximum file upload size?
-  No more than 2GB. All files in your account must fit your allotted storage space.
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
 
-  How do I reset my password?
-  Click “Forgot password” from the login page or “Change password” from your profile page.
-  A reset link will be emailed to you.
+    <!-- TailwindCSS -->
+    <link rel="stylesheet" href="./styles/input.css" />
 
-  Can I cancel my subscription?
-  Yes! Send us a message and we’ll process your request no questions asked.
+    <!-- JQuery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body
+    class="font-kumbh-sans text-xs bg-gradient-to-b from-primary-sf-violet to-primary-sf-blue min-h-screen grid place-items-center"
+  >
+    <!-- Card -->
+    <div
+      class="bg-white m-4 p-6 rounded-3xl max-w-xs md:max-w-none mt-24 shadow-2xl md:flex md:gap-14 relative md:pr-16"
+    >
+      <!-- Image -->
+      <div
+        class="w-[240px] mx-auto md:w-full md:mx-0 relative -mt-32 md:mt-0 md:-ml-20"
+      >
+        <img
+          src="./images/illustration-woman-online-mobile.svg"
+          alt=""
+          class="h-[182px] md:h-full"
+        />
+        <img
+          src="./images/bg-pattern-mobile.svg"
+          alt=""
+          class="-mt-20 md:hidden"
+        />
+      </div>
 
-  Do you provide additional support?
-  Chat and email support is available 24/7. Phone lines are open during normal business hours.
+      <!-- FAQ -->
+      <div class="my-8">
+        <h2
+          class="font-bold text-3xl tracking-tighter text-center md:text-left mb-4 text-primary-dstrd-blue"
+        >
+          FAQ
+        </h2>
+        <ul>
+          <li>
+            <div class="accordion">
+              <button>
+                How many team members can I invite?
+                <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M1 .799l4 4 4-4"
+                    stroke="#F47B56"
+                    stroke-width="2"
+                    fill="none"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+              <p>
+                You can invite up to 2 additional users on the Free plan. There
+                is no limit on team members for the Premium plan.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="accordion">
+              <button>
+                What is the maximum file upload size?
+                <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M1 .799l4 4 4-4"
+                    stroke="#F47B56"
+                    stroke-width="2"
+                    fill="none"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+              <p>
+                No more than 2GB. All files in your account must fit your
+                allotted storage space.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="accordion">
+              <button>
+                How do I reset my password?
+                <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M1 .799l4 4 4-4"
+                    stroke="#F47B56"
+                    stroke-width="2"
+                    fill="none"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+              <p>
+                Click “Forgot password” from the login page or “Change password”
+                from your profile page. A reset link will be emailed to you.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="accordion">
+              <button>
+                Can I cancel my subscription?
+                <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M1 .799l4 4 4-4"
+                    stroke="#F47B56"
+                    stroke-width="2"
+                    fill="none"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+              <p>
+                Yes! Send us a message and we'll process your request no
+                questions asked.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="accordion">
+              <button>
+                Do you provide additional support?
+                <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M1 .799l4 4 4-4"
+                    stroke="#F47B56"
+                    stroke-width="2"
+                    fill="none"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+              <p>
+                Chat and email support is available 24/7. Phone lines are open
+                during normal business hours.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <div class="sr-only">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+
+    <script>
+      $(".accordion button").click(function () {
+        $(".accordion").removeClass("active");
+        $("svg").removeClass("rotate-180");
+        $(".accordion button").removeClass(
+          "!font-bold !text-primary-dstrd-blue"
+        );
+        $(this).addClass("!font-bold !text-primary-dstrd-blue");
+        $(this).parent().addClass("active");
+        $(this).find("svg").addClass("rotate-180");
+      });
+    </script>
+  </body>
 </html>

@@ -1,0 +1,28 @@
+{
+  "name": "fmentor-faqaccordion",
+  "version": "1.0.0",
+  "description": "![Design preview for the FAQ accordion card coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "npx tailwindcss -i ./styles/input.css -o ./styles/app.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fachryafrz/FMentor-FAQAccordion.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fachryafrz/FMentor-FAQAccordion/issues"
+  },
+  "homepage": "https://github.com/fachryafrz/FMentor-FAQAccordion#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.12",
+    "postcss": "^8.4.18",
+    "tailwindcss": "^3.1.8",
+    "vite": "^3.1.8"
+  }
+}
